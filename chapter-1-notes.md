@@ -12,7 +12,7 @@
 2. compiler: the complier takes the hello.i file and converts it's contents into assembly language.
    the complier generates a hello.s file
 3. assembler: the assembler takes hello.s and converts it into machine language 1s and 0s then places it in hello.o file
-4. linker: the linker is responsible of getting the code of libraries and functions called in the program, for example if u use the printf function, the linker gets the code of the function and merges it with the file.a
+4. linker: the linker is responsible of getting the code of libraries and functions called in the program, for example if u use the printf function, the linker gets the code of the function and merges it with the file.
    the linker produces hello file (no extension) that is ready to be run.
 
 -   to run the hello program we run it from the shell command line prompt, typing ./hello we see hello, world.
