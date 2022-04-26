@@ -4,7 +4,7 @@ typedef unsigned char *byte_pointer;
 
 int main()
 {
-	show_int(55555);
+	show_double(2.0);
 	return 0;
 }
 
@@ -29,4 +29,19 @@ void show_float(float x)
 void show_pointer(void *x)
 {
 	show_bytes((byte_pointer)&x, sizeof(void *));
+}
+
+void show_short(short x)
+{
+	show_bytes((byte_pointer)&x, sizeof(short));
+}
+
+void show_long(long x)
+{
+	show_bytes((byte_pointer)&x, sizeof(long));
+}
+
+void show_double(double x)
+{
+	show_bytes((byte_pointer)&x, sizeof(double));
 }
